@@ -6,9 +6,6 @@ import os
 
 app = FastAPI()
 
-
-
-
 @app.get('/')
 def index():
     return 'q onda mondonga'
