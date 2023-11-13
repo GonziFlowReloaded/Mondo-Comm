@@ -27,7 +27,7 @@ html = f"""
 
 @app.get("/")
 async def root():
-    return HTMLResponse(html)
+    return 'q onda mondonga'
 
 @app.get('/ping')
 async def hello():
