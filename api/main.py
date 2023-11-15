@@ -40,6 +40,12 @@ def send_message():
     return {"status": 200,
             "message": "Mails enviados"}
 
+@app.route('/test', methods=['POST'])
+def test():
+    return {
+        "status": 200,
+        "test": request.json
+    }
 
 if __name__ == '__main__':
     app.run(debug=True)
