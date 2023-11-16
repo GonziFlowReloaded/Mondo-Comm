@@ -1,9 +1,11 @@
 from flask import Flask, request
 from dotenv import load_dotenv
+from flask_cors import CORS
 import smtplib
 import os
 load_dotenv()
 app = Flask(__name__)
+CORS(app)
 
 
 def adapter(res):
